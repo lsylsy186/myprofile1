@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="suggestion/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body ng-app="myApp">
+    <div class="container-fluid">
+    <nav class="navbar-fluid navbar-default navbar-fixed-top">
+        <div class="my-mav">
+        <div class="container">
+            <a class="navbar-brand text-muted" href="/index.html"> My Domain </a>
+            <a class="navbar-brand" href="#/"> Back </a>
+            <p class="navbar-text"> Learn the MEAN stack by building this app, <mark>login</mark> or <mark>register</mark> to leave your feedback! </p>
+            <p class="navbar-right navbar-text" ng-hide="authenticated">
+                <a href="#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            </p>
+            <p class="navbar-right navbar-text" ng-hide="authenticated">
+                <a href="#/register"><span class="glyphicon glyphicon-user"></span> Register</a>
+            </p>
+            <p class="navbar-right navbar-text" ng-show="authenticated"><a href="#/" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>Logout</a></p>
+            <p class="navbar-right navbar-text" ng-show="authenticated">Signed in as {{current_user}}</p>
+        </div>
+        </div>
+    </nav>
+    <div class="col-md-offset-2 col-md-8">
+        <div class="main-page">
+        <div ng-view></div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="javascripts/chirpApp.js"></script>
+
+</body>
+</html>

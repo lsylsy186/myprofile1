@@ -1,0 +1,11 @@
+1.Stock Images: https://unsplash.com/
+2.Image place holders: http://placehold.it/
+3.Tool for Choosing a Color Scheme: https://color.adobe.com/create/color-wheel/
+
+4.Chrome Extension to Analyze Colors on other sites:
+ https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en
+
+5.Google Fonts, a great place to get free fonts for your sites:
+https://www.google.com/fonts 
+
+6. www.yoursite.com/log

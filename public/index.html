@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+<body ng-app="myApp" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav id="my-header" class="navbar navbar-default navbar-fixed-top navigation-hidden">
+  <div  class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My Domain</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about"><img src="\img\user-list.svg"> ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#supporting">SUPPORTING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="/homeApp.html"><img src="\img\speech-bubble.svg">SUGGESTION BOX</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="main">
+                <h1>Welcome to My Domain</h1>
+                <p>Feel free to look around</p>
+                <a class="btn-primary" href="#about">CLICK TO BEGIN</a>
+            </div>
+        </div>
+    </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="container-fluid about">
+    <ul id="tabs" class="nav nav-tabs tabs">
+      <li><a href="#tab1">Summary</a></li>
+      <li><a href="#tab2">Honors & Awards</a></li>
+      <li><a href="#tab3">Interest</a></li>
+      <li><a href="#tab4">Footprint</a></li>
+    </ul>
+    <div id="tab">
+    <div id="tab1">
+    <h2 class="text-center">Summary</h2>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-1">
+        <img id='potrait' src="/img/1.jpg">
+      </div>
+      <div class="col-sm-3">
+        <h3>Shengyang Liu, </h3>
+      </div>
+      </div>
+      <div id="introduction" class="row">
+      <div class="col-sm-8">
+        <p class="infos">Software Engineer start from 14th April, 2014. <br />
+                Graduate student of Electrical Engineering at State Unverisity of New York at Buffalo, focus on software engineer.<br />
+                Strongly self-motivated. Keep passionate to learn new techniques.<br />
+                Professional skills in Front-End, J2EE web development. Basic understanding for android so that I also have job interest in Mobile development.<br /><br />
+                For more details, please go to my <Strong>LinkedIn</strong> Profile or Supporting section.
+                </p>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+      <h2 class="text-center">Education</h2>
+      <h3>State University of New York at Buffalo</h3>
+      <p>Date Attended: Aug 2014 - Feb 2016</p>
+      <p>Master degree of Electrical Engineering</p>
+      <p>Field of study: Electrical Engineer & Software Engineer</p>
+      <p>Course study: Introduction to Algorithms; Principle of Programming Language; Principles of Networking; Java Programming; Embedded Systems & Applications; Data Structure & Application; Introduction to MRI; Communication Electronics, etc.</p>
+      <h3>Tianjin Polytechnic University</h3>
+      <p>Date Attended: Sep 2009 - Jun 2014</p>
+      <p>Bachelor's degree</p>
+      <p>Field of Study: Electronic Information Science & Technology</p>
+      <p>Course Study: Database Principles & Applications; C/C++ Programming; Digital Signal Processing & Digital Signal Processor; EDA Principles & Application, etc. </p>
+      </div>
+      <div class="container">
+        <h2 class="text-center">Professional Skills</h2>
+        <p>Java Programming</p>
+        <p>C Programming</p>
+        <p>MySQL Database</p>
+        <p>HTML4.0/HTML5, CSS JavaScript including JQuery, Ajax and AngularJS</p>
+        <p>Bootstrap, JQuery UI for UI web design</p>
+        <p>NodeJS, ExpressJS</p>
+        <p>NoSQL Database such as MongoDB</p>
+        <p>Basic knowledge for Java Web Frameworks: Struts, Spring and Hibernate</p>
+        <p>Entry-level Mobile Development for Android</p>
+        <p>Embedded System</p>
+      </div>
+    </div>
+      <div id="tab2">
+        <h2 class="text-center">Honors & Awards</h2>
+        <h3>2ND Price in Holtek Microcontroller Application Design Competition 2011</h3>
+        <p>Issuer: Tianjin Municipal Education Commission</p>
+        <p>Date: Apr 2011</p>
+        <p>Description: Our team's entry is named "Intelligent Robot Fish with Holtek Microcontroller" consists of 5 robot fishes which can swim forward and turn with steering engines, following the paths drawn by a mouse.</p>
+        <div class="row"></div>
+        <h3>3RD Price in Holtek Microcontroller Application Design Competition 2012</h3>
+        <p>Issuer: Tianjin Municipal Education Commission</p>
+        <p>Date: Apr 2012</p>
+        <p>Description: Our team's entry is named "Engraving Machine with Holtek Microcontroller" driven by a stepping motor which controlled by Holtek Microcontroller.</p>
+        <div class="row"></div>
+        <h3>Award for Outstanding Student</h3>
+        <p>Issuer: Tianjin Polytechnic University</p>
+        <p>Date: Dec 2012</p>
+        <p>Description: This award was issued once a year and given for the students who ranked top 30% in terms of the academic performance and social activities such as volunteers</p>
+      </div>
+      <div id="tab3">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <h3>Basketball</h3>
+            <img id="interest1" class="img-rounded" src="img/other/kobe.jpg">
+          </div>
+          <div class="col-sm-4 text-center">
+            <h3>Pinao</h3>
+            <img id="interest2" class="img-rounded" src="img/other/piano.jpg">
+          </div>
+          <div class="col-sm-4 text-center">
+            <h3>Travel</h3>
+            <img id="interest3" class="img-rounded" src="img/other/travel.jpg">
+          </div>
+        </div>
+      </div>
+      <div id="tab4">
+        <h2 class="text-center">My Footprint</h2>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="row">
+                  <div class="text-center">
+                    <img class="img-rounded" src="img/other/graduation.jpg">
+                    <h4>Graduated with my Bachelor's degree - Jun 2014<br><span style="font-style:normal;"><small>Walk out of ivory tower</small></span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="text-center">
+                  <img class="img-rounded" src="img/other/UB.jpg">
+                  <h4>Begin to study at UB - Sep 2014<br><span style="font-style:normal;"><small>First time to the US</small></span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="text-center">
+                  <img class="img-rounded" src="img/other/selfdriven.jpg">
+                  <h4>Lombard Street in SF- July 2015<br><span style="font-style:normal;"><small>First time to road trip</small></span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="text-center">
+                  <img class="img-rounded" src="img/other/sea.jpg">
+                  <h4>Cruise to the Caribbean- Dec 2015<br><span style="font-style:normal;"><small>Watch the sea with my lover</small></span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="text-center">
+                  <img class="img-rounded" src="img/other/graduation2.jpg">
+                  <h4>Graduated with my Master's degree- May 2016<br><span style="font-style:normal;"><small>Attend graduation ceremony with my parents</small></span></h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!-- <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-7">
+              <h4>Undergraduate graduation</h4>
+              <p>Date: June 2014</p>
+              <p><strong>Walk</strong> out of the ivory tower</p>
+            </div>
+            <div class="col-sm-5">
+              <img src="img/other/graduation.jpg">
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    </div>
+
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio"  class="container-fluid text-center bg-grey">
+    <h2>Portfolio</h2>
+    <h4>What I have created</h4>
+
+    <div id="boxes">
+      <div id="dialog1" class="window dialog">
+        <p><strong>Suggestion Box</strong><span class="glyphicon glyphicon-remove pull-right close"></span></p>
+        <img src="img/projects/suggestionbox2.jpg" height="345">
+        <div class="text-left">
+        <p><small>This web application built by using the whole MEAN stack -- Mongo, ExpressJS, AngularJS and NodeJS. Anyone can register a username and post his suggestion on the home page, and he can delete any suggestions he posted. Furthermore, anyone can go to comments area to leave his comments to the corresponding suggestion.</small></p>
+        <p><small>Create a dynamic front end by using the AngularJS front end framework Run an server-side application with authentication services on Node.js Model and store data in MongoDB Build an RESTful API using Express.js.</small></p>
+        </div>
+      </div>
+      <div id="dialog2" class="window dialog">
+        <p><strong>Carcassonne</strong><span class="glyphicon glyphicon-remove pull-right close"></span></p>
+        <img src="img/projects/car_gb.jpg" height="330">
+        <div class="text-left">
+          <p><small>A tile-placement game in which the players draw and place a tile with a piece of southern French landscape on it.</small></p>
+          <p><small>Written 3700 lines of Java code. Using Hashmap to create data structure which implicit a tile in the game. Using state machine class to control the whole process of the game. Using JButton implemented actionlistener to draw tile image on it.</small></p>
+          <p><small>Written all the JUnit test cases.</small></p>
+          <p><small>Save and load game using serializable.</small></p>
+        </div>
+      </div>
+      <div id="dialog3" class="window dialog">
+        <p><strong>Flappy Bird</strong><span class="glyphicon glyphicon-remove pull-right close"></span></p>
+        <img src="img/projects/flappybird.jpg" height="350">
+        <div class="text-left">
+          <p><small>Written 800 lines of C code to simulate a bird which moves continuously to the right, attempting to fly between oncoming rows of green pipes without coming into contact with them. It simulates based on the mobile game "Flappy Bird".</small></p>
+          <p><small>Using the INT0 interrupt button to make the bird move up.</small></p>
+        </div>
+      </div>
+      <div id="mask"></div>
+    </div>
+
+    <div class="row text-center">
+      <div id="suggestionbox" class="col-sm-4">
+        <div class="thumbnail slideanim">
+          <img src="img/projects/suggestion box1.jpg" alt="suggestion box">
+          <p><strong>Suggestion Box</strong></p>
+          <p>Mean Stack Web Application</p>
+        </div>
+      </div>
+      <div id="carcassonne" class="col-sm-4">
+        <div class="thumbnail slideanim">
+          <img src="img/projects/car_gb.jpg" alt="Carcassonne">
+          <p><strong>Carcassonne</strong></p>
+          <p>Developed by Java Programming language</p>
+        </div>
+      </div>
+      <div id="flappybird" class="col-sm-4">
+        <div class="thumbnail slideanim">
+          <img src="img/projects/flappybird.jpg" alt="San Francisco">
+          <p><strong>Flappy Bird</strong></p>
+          <p>Developed on ARM Cortex-M3 LPC1768</p>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- supporting -->
+  <div id="supporting" class="supporting container-fluid text-center">
+        <div class="row text-center">
+          <div class="col-sm-4">
+              <img src="\img\github.svg">
+              <h2>GitHub</h2>
+              <p>Make your projects look great and interact beautifully.</p>
+              <a class="btn-default" href="https://github.com/lsylsy186">Learn more</a>
+          </div>
+          <div class="col-sm-4">
+              <img src="\img\facebook.svg">
+              <h2>LifeStyle</h2>
+              <p>Use modern tools to turn your design into a web site</p>
+              <a class="btn-default" href="https://www.facebook.com/profile.php?id=100008405555062">Learn more</a>
+          </div>
+          <div class="col-sm-4">
+              <img src="\img\linkedin.svg">
+              <h2>Professional</h2>
+              <p>Use modern tools to turn your design into a web site</p>
+              <a class="btn-default" href="https://www.linkedin.com/in/liu-shengyang-453441b2">Learn more</a>
+          </div>
+      </div>
+
+    <!-- contact container -->
+    <div id="contact" class="container-fluid bg-grey slideanim">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact me and I'll get back to you within 2 days.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> New Jersey, US</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> lsylsy186@163.com</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+        <!-- <div ng-view></div> -->
+    <!-- <div class="footer">
+        <div class="container"><p>Copyright Liu 2016</p></div>
+    </div> -->
+
+    <footer class="text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Theme:By Bootstrap | Copyright Liu 2016</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+    <script type="text/javascript" src="javascripts/myApp.js"></script>
+</body>
+</html>

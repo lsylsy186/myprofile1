@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body ng-app="myApp">
+    <div id='main' class="container" ng-controller="loginController">
+        <form class="form-auth" ng-submit="register()">
+            <h2>Register</h2>
+            <p class="text-warning">{{error_message}}</p>
+            <input type="username" ng-model="user.username" placeholder="Username" class="form-control"><br>
+            <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
+            <input type="submit" value="Register" class="btn btn-primary"/>
+        </form>
+    </div>
+    <script type="text/javascript" src="chirpApp.js"></script>
+</body>
+</html>
