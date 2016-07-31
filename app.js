@@ -15,15 +15,14 @@ var authenticate = require('./routes/authenticate')(passport);
 //add for Mongo support
 var mongoose = require('mongoose');
 
-// if(process.env.DEV_ENV){
-//     var username = "root";
-//     var pass = "123";
-//     //connect to Mongo
-//     mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
-
-// }else{
-    mongoose.connect('mongodb://localhost/mychirp');
-// }
+if(process.env.DEV_ENV){
+    var username = "root";
+    var pass = "123";
+    //connect to Mongo
+    mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
+    }else{
+        mongoose.connect('mongodb://localhost/mychirp');
+}
 
 var app = express();
 
