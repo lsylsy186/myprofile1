@@ -9,8 +9,10 @@ var over = function(){
       $('body').css({overflow:"scroll"});
    });
    $('#mask').click(function (){
-      $(this).css({visibility: "hidden"});
+      $('body').css({overflow:"scroll"});
+      $('#mask').css({visibility: "hidden"});
       $('.window').hide();
+
    });
 }
 

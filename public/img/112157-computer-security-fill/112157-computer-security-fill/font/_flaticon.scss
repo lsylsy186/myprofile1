@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:29
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-alarm:before { content: "\f100"; }
+.flaticon-bomb:before { content: "\f101"; }
+.flaticon-computer-secure:before { content: "\f102"; }
+.flaticon-hacked-computer:before { content: "\f103"; }
+.flaticon-infected-file:before { content: "\f104"; }
+.flaticon-infected-folder:before { content: "\f105"; }
+.flaticon-key:before { content: "\f106"; }
+.flaticon-life-preserver:before { content: "\f107"; }
+.flaticon-locked-email:before { content: "\f108"; }
+.flaticon-magnifying-glass:before { content: "\f109"; }
+.flaticon-open-padlock:before { content: "\f10a"; }
+.flaticon-password:before { content: "\f10b"; }
+.flaticon-secure-cloud:before { content: "\f10c"; }
+.flaticon-secure-download:before { content: "\f10d"; }
+.flaticon-secure-file:before { content: "\f10e"; }
+.flaticon-secure-pendrive:before { content: "\f10f"; }
+.flaticon-secure-smartphone:before { content: "\f110"; }
+.flaticon-security-camera:before { content: "\f111"; }
+.flaticon-security-code:before { content: "\f112"; }
+.flaticon-security-code-1:before { content: "\f113"; }
+.flaticon-shield:before { content: "\f114"; }
+.flaticon-spam:before { content: "\f115"; }
+.flaticon-spy:before { content: "\f116"; }
+.flaticon-spy-1:before { content: "\f117"; }
+.flaticon-spy-alarm-on-laptop:before { content: "\f118"; }
+.flaticon-strongbox:before { content: "\f119"; }
+.flaticon-trojan:before { content: "\f11a"; }
+.flaticon-virus:before { content: "\f11b"; }
+.flaticon-wall:before { content: "\f11c"; }
+.flaticon-warning:before { content: "\f11d"; }
+    
+    $font-Flaticon-alarm: "\f100";
+    $font-Flaticon-bomb: "\f101";
+    $font-Flaticon-computer-secure: "\f102";
+    $font-Flaticon-hacked-computer: "\f103";
+    $font-Flaticon-infected-file: "\f104";
+    $font-Flaticon-infected-folder: "\f105";
+    $font-Flaticon-key: "\f106";
+    $font-Flaticon-life-preserver: "\f107";
+    $font-Flaticon-locked-email: "\f108";
+    $font-Flaticon-magnifying-glass: "\f109";
+    $font-Flaticon-open-padlock: "\f10a";
+    $font-Flaticon-password: "\f10b";
+    $font-Flaticon-secure-cloud: "\f10c";
+    $font-Flaticon-secure-download: "\f10d";
+    $font-Flaticon-secure-file: "\f10e";
+    $font-Flaticon-secure-pendrive: "\f10f";
+    $font-Flaticon-secure-smartphone: "\f110";
+    $font-Flaticon-security-camera: "\f111";
+    $font-Flaticon-security-code: "\f112";
+    $font-Flaticon-security-code-1: "\f113";
+    $font-Flaticon-shield: "\f114";
+    $font-Flaticon-spam: "\f115";
+    $font-Flaticon-spy: "\f116";
+    $font-Flaticon-spy-1: "\f117";
+    $font-Flaticon-spy-alarm-on-laptop: "\f118";
+    $font-Flaticon-strongbox: "\f119";
+    $font-Flaticon-trojan: "\f11a";
+    $font-Flaticon-virus: "\f11b";
+    $font-Flaticon-wall: "\f11c";
+    $font-Flaticon-warning: "\f11d";

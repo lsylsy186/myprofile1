@@ -1,0 +1,71 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:40
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-badoo:before { content: "\f100"; }
+.flaticon-behance:before { content: "\f101"; }
+.flaticon-deviantart:before { content: "\f102"; }
+.flaticon-dribbble:before { content: "\f103"; }
+.flaticon-facebook:before { content: "\f104"; }
+.flaticon-flickr:before { content: "\f105"; }
+.flaticon-google-plus:before { content: "\f106"; }
+.flaticon-instagram:before { content: "\f107"; }
+.flaticon-lastfm:before { content: "\f108"; }
+.flaticon-linkedin:before { content: "\f109"; }
+.flaticon-pinterest:before { content: "\f10a"; }
+.flaticon-soundcloud:before { content: "\f10b"; }
+.flaticon-swarm:before { content: "\f10c"; }
+.flaticon-tumblr:before { content: "\f10d"; }
+.flaticon-twitter:before { content: "\f10e"; }
+.flaticon-vk:before { content: "\f10f"; }
+    
+    $font-Flaticon-badoo: "\f100";
+    $font-Flaticon-behance: "\f101";
+    $font-Flaticon-deviantart: "\f102";
+    $font-Flaticon-dribbble: "\f103";
+    $font-Flaticon-facebook: "\f104";
+    $font-Flaticon-flickr: "\f105";
+    $font-Flaticon-google-plus: "\f106";
+    $font-Flaticon-instagram: "\f107";
+    $font-Flaticon-lastfm: "\f108";
+    $font-Flaticon-linkedin: "\f109";
+    $font-Flaticon-pinterest: "\f10a";
+    $font-Flaticon-soundcloud: "\f10b";
+    $font-Flaticon-swarm: "\f10c";
+    $font-Flaticon-tumblr: "\f10d";
+    $font-Flaticon-twitter: "\f10e";
+    $font-Flaticon-vk: "\f10f";

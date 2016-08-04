@@ -14,15 +14,16 @@ var authenticate = require('./routes/authenticate')(passport);
 
 //add for Mongo support
 var mongoose = require('mongoose');
+var env = process.env.NODE_ENV || 'dev';
 
-if(process.env.DEV_ENV){
-    var username = "root";
-    var pass = "123";
-    //connect to Mongo
-    mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
-    }else{
-        mongoose.connect('mongodb://localhost/mychirp');
-}
+
+// if(env == 'dev'){
+    mongoose.connect('mongodb://localhost/mychirp');
+// }else{
+//     var username = "root";
+//     var pass = "123";
+//     mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
+// }
 
 var app = express();
 
