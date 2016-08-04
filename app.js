@@ -22,7 +22,7 @@ if(env == 'dev'){
 }else{
     var username = "root";
     var pass = "123";
-    mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
+    mongoose.connect('mongodb://' + username + ':' + pass + '@ds139685.mlab.com:39685/tommydatabase');
 }
 
 var app = express();
