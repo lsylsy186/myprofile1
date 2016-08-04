@@ -17,13 +17,13 @@ var mongoose = require('mongoose');
 var env = process.env.NODE_ENV || 'dev';
 
 
-// if(env == 'dev'){
+if(env == 'dev'){
     mongoose.connect('mongodb://localhost/mychirp');
-// }else{
-//     var username = "root";
-//     var pass = "123";
-//     mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
-// }
+}else{
+    var username = "root";
+    var pass = "123";
+    mongoose.connect('mongodb://' + username + ':' + pass + '@ds064188.mlab.com:64188/mydb');
+}
 
 var app = express();
 
