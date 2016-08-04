@@ -17,7 +17,7 @@ var mongoose = require('mongoose');
 var env = process.env.NODE_ENV || 'dev';
 
 
-if(env == 'dev'){
+if(env != 'dev'){
     mongoose.connect('mongodb://localhost/mychirp');
 }else{
     var username = "root";
