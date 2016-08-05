@@ -11,6 +11,7 @@ require('./models/models');
 var index = require('./routes/index');
 var api = require('./routes/api');
 var authenticate = require('./routes/authenticate')(passport);
+var FileStore = require('session-file-store')(session);
 
 //add for Mongo support
 var mongoose = require('mongoose');
@@ -35,9 +36,11 @@ app.set('view engine', 'ejs');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(session({
-    resave: false,
-    saveUninitialized: true,
+    name:'server-session-cookie-id',
     secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true,
+    store: new FileStore()
 }));
 
 app.use(bodyParser.json());
