@@ -38,7 +38,7 @@ app.use(logger('dev'));
 app.use(session({
     name:'server-session-cookie-id',
     secret: 'keyboard cat',
-    resave: true,
+    resave: false,
     saveUninitialized: true,
     store: new FileStore()
 }));
