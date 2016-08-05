@@ -36,7 +36,6 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(session({
     secret: 'keyboard cat',
-    resave: true;
 }));
 
 app.use(bodyParser.json());

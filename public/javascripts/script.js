@@ -110,7 +110,7 @@ $('#interest1').mouseout(function(){
 $('#interest2').mouseover(function(){
   var $this = $(this);
   $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/piano2.jpg').bind('onreadystatechange load', function(){
+    $(this).attr('src', 'img/other/piano2.JPG').bind('onreadystatechange load', function(){
       if (this.complete) $(this).fadeIn(300);
     });
   });
@@ -128,7 +128,7 @@ $('#interest2').mouseout(function(){
 $('#interest3').mouseover(function(){
   var $this = $(this);
   $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/travel2.jpg').bind('onreadystatechange load', function(){
+    $(this).attr('src', 'img/other/travel2.JPG').bind('onreadystatechange load', function(){
       if (this.complete) $(this).fadeIn(300);
     });
   });
