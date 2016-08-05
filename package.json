@@ -1,5 +1,5 @@
 {
-  "name": "MEANStack",
+  "name": "meanstack",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -18,5 +18,10 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "meanstack",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "sliu37",
+  "license": "ISC"
 }

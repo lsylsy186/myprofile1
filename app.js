@@ -34,9 +34,12 @@ app.set('view engine', 'ejs');
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
+
 app.use(session({
   secret: 'keyboard cat',
+  cookie: { maxAge: 60000 }
 }));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -82,13 +85,5 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
-
-app.use(function() {
-    sessionStore.all(function(err, sessions) {
-        for (var i = 0; i < sessions.length; i++) {
-            sessionStore.get(sessions[i], function() {} );
-        }
-    });
-})
 
 module.exports = app;
