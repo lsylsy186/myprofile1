@@ -35,9 +35,7 @@ app.set('view engine', 'ejs');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(session({
-    saveUninitialized: true
-    resave: true,
-  secret: 'keyboard cat'
+  secret: 'keyboard cat',
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -85,5 +83,12 @@ app.use(function(err, req, res, next) {
     });
 });
 
+app.use(function() {
+    sessionStore.all(function(err, sessions) {
+        for (var i = 0; i < sessions.length; i++) {
+            sessionStore.get(sessions[i], function() {} );
+        }
+    });
+})
 
 module.exports = app;
