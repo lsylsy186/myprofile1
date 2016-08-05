@@ -35,6 +35,8 @@ app.set('view engine', 'ejs');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(session({
+    resave: false,
+    saveUninitialized: true,
     secret: 'keyboard cat',
 }));
 
