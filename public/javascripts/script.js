@@ -101,7 +101,7 @@ $('#interest1').mouseover(function(){
 $('#interest1').mouseout(function(){
   var $this = $(this);
   $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/kobe.jpg').bind('onreadystatechange load', function(){
+    $(this).attr('src', 'img/other/kobe.JPG').bind('onreadystatechange load', function(){
       if (this.complete) $(this).fadeIn(300);
     });
   });
