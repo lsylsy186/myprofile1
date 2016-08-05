@@ -36,8 +36,7 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 
 app.use(session({
-  secret: 'keyboard cat',
-  cookie: { maxAge: 60000 }
+    secret: 'keyboard cat',
 }));
 
 app.use(bodyParser.json());
