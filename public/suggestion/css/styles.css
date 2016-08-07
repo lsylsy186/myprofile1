@@ -12,7 +12,7 @@ body {
 
     border-radius:10px;
     margin: 10px;
-    font-family: cursive, sans-serif;
+    font-family: 'Love Ya Like A Sister', cursive;
     padding-left: 5px;
     padding-bottom: 5px;
     border-style: dashed;
@@ -23,7 +23,7 @@ body {
     /*background-color: rgba(175, 238, 238, 0.8);*/
     border-radius:10px;
     margin: 10px;
-    font-family: cursive, sans-serif;
+    font-family: 'Love Ya Like A Sister', cursive;
     padding-left: 10px;
     padding-bottom: 5px;
     border-style: dashed;
@@ -45,7 +45,7 @@ body {
 }
 .operation {
     margin: 10px;
-    font-family: cursive, sans-serif;
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 .link{
     color: #191970;
@@ -120,7 +120,7 @@ body {
 
 #title {
     margin: 10px;
-    font-family: cursive, sans-serif;
+    font-family: 'Love Ya Like A Sister', cursive;
     text-align: center;
     font-size: 50px;
 }
