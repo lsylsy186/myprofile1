@@ -88,60 +88,65 @@ $('#flappybird').click(function(){
    over();
 });
 
+$(document).on({
+    "mouseenter":function(){
+        var $this = $(this);
+        $this.fadeOut(300, function(){
+          $(this).attr('src','img/other/basketball.jpg').bind('onreadystatechange load', function(){
+            if (this.complete) $(this).fadeIn(300);
+          });
+        });
+    },
+    "mouseleave":function(){
+        var $this = $(this);
+        $this.fadeOut(300, function(){
+          $(this).attr('src', 'img/other/kobe.JPG').bind('onreadystatechange load', function(){
+            if (this.complete) $(this).fadeIn(300);
+          });
+        });
+    }
+}, "#interest1");
 
-$('#interest1').mouseover(function(){
-  var $this = $(this);
-  $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/basketball.jpg').bind('onreadystatechange load', function(){
-      if (this.complete) $(this).fadeIn(300);
-    });
-  });
-});
 
-$('#interest1').mouseout(function(){
-  var $this = $(this);
-  $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/kobe.JPG').bind('onreadystatechange load', function(){
-      if (this.complete) $(this).fadeIn(300);
-    });
-  });
-});
+$(document).on({
+    "mouseenter":function(){
+        var $this = $(this);
+        $this.fadeOut(300, function(){
+          $(this).attr('src', 'img/other/piano2.JPG').bind('onreadystatechange load', function(){
+            if (this.complete) $(this).fadeIn(300);
+          });
+        });
+    },
+    "mouseleave":function(){
+        var $this = $(this);
+        $this.fadeOut(300, function(){
+          $(this).attr('src', 'img/other/piano.jpg').bind('onreadystatechange load', function(){
+            if (this.complete) $(this).fadeIn(300);
+          });
+        });
+    }
+}, "#interest2");
 
-$('#interest2').mouseover(function(){
-  var $this = $(this);
-  $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/piano2.JPG').bind('onreadystatechange load', function(){
-      if (this.complete) $(this).fadeIn(300);
-    });
-  });
-});
 
-$('#interest2').mouseout(function(){
-  var $this = $(this);
-  $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/piano.jpg').bind('onreadystatechange load', function(){
-      if (this.complete) $(this).fadeIn(300);
-    });
-  });
-});
+$(document).on({
+    "mouseenter":function(){
+        var $this = $(this);
+        $this.fadeOut(300, function(){
+          $(this).attr('src', 'img/other/travel2.JPG').bind('onreadystatechange load', function(){
+            if (this.complete) $(this).fadeIn(300);
+          });
+        });
+    },
+    "mouseleave":function(){
+        var $this = $(this);
+        $this.fadeOut(300, function(){
+          $(this).attr('src', 'img/other/travel.jpg').bind('onreadystatechange load', function(){
+            if (this.complete) $(this).fadeIn(300);
+          });
+        });
+    }
+}, "#interest3");
 
-$('#interest3').mouseover(function(){
-  var $this = $(this);
-  $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/travel2.JPG').bind('onreadystatechange load', function(){
-      if (this.complete) $(this).fadeIn(300);
-    });
-  });
-});
-
-$('#interest3').mouseout(function(){
-  var $this = $(this);
-  $this.fadeOut(300, function(){
-    $(this).attr('src', 'img/other/travel.jpg').bind('onreadystatechange load', function(){
-      if (this.complete) $(this).fadeIn(300);
-    });
-  });
-});
 
 $(function(){
   //show the first tab
@@ -187,6 +192,7 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 

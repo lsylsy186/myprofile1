@@ -1,5 +1,5 @@
 <div class="my-main-page">
-<h1 id="title"><span><img id="bulb" src="suggestion/img/light-bulb.svg"></span>Suggestion Box</h1>
+<h1 id="title"><span><img id="bulb" src="img/light-bulb.svg"></span>Suggestion Box</h1>
 <div class="home">
     <div class="suggestions" ng-repeat="post in posts | orderBy:'-upvote'" ng-class-odd="'odd'" ng-class-even="'even'">
         <button id="remove" ng-show='authenticated' ><span class="glyphicon glyphicon-remove-sign" ng-click="remove(post)"></span></button>
