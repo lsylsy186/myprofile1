@@ -132,7 +132,6 @@ app.controller('suggestionController', ['$rootScope','$scope', '$routeParams',
 
     $scope.targets =updateService.get({id : $routeParams.id});
     $scope.newComments = {contents:'', upvotes: 0, created_by: '', created_at: ''};
-
     $scope.addComment = function(){
         if(!$scope.my_comments || $scope.my_comments === '' ){
             return;

@@ -1,10 +1,10 @@
-<h1 id="title"><span><img id="bulb" src="suggestion/img/light-bulb.svg"></span>Suggestion Box</h1>
+<h1 id="title"><span><img id="bulb" src="img/light-bulb.svg"></span>Suggestion Box</h1>
 <div class="home">
     <div id="suggestion_title" class="comments">
         <h2>{{ targets.title }} <span id="post-by"><small> Posted by @{{targets.created_by}}  at "{{targets.created_at | date:"h:mma 'on' MMM d, y"}}"</small></h2>
         <p><button id="add" ng-show="authenticated"><span class="glyphicon glyphicon-plus-sign" ng-click="upVote(targets)"></span></button>Upvotes: {{targets.upvote}}</p>
     </div>
-    <div id="suggestion_comment" class="comments" >
+    <div id="suggestion_comment" class="comments">
         <h4 id="Comments_title">Comments:</h4>
         <ul ng-repeat="comment in targets.comments | orderBy:'-upvote'" class="comments_section">
             <li><p id="comment-by">@{{comment.created_by}}  at "{{comment.created_at | date:"h:mma 'on' MMM d, y"}}"</p> </li>

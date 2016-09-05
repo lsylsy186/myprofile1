@@ -7,7 +7,7 @@
         <p>
             <button id="add" ng-show='authenticated'><span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span></button> Upvotes: {{post.upvote}}
         </p>
-        <a class="link" href="#/suggestion/{{post._id}}">Comments</a>
+        <a class="link" href="#/suggestion/{{post._id}}">Comments  <span class="badge">{{post.comments.length}}</span></a>
     </div>
 
     <div class="operation" ng-show='authenticated'>

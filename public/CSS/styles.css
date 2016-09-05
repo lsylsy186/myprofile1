@@ -12,23 +12,25 @@ body {
 
     border-radius:10px;
     margin: 10px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    border-style: dashed;
+
+    padding-left: 8px;
+    padding-bottom: 8px;
+/*    border-style: dashed;*/
 }
 .comments {
     /*    background-color: #AFEEEE;*/
-    background-color: rgba(173, 216, 230, 0.9);
+    /*background-color: rgba(173, 216, 230, 0.9);*/
     /*background-color: rgba(175, 238, 238, 0.8);*/
     border-radius:10px;
     margin: 10px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: 5px;
+    padding-top: 1px;
     padding-left: 10px;
     padding-bottom: 5px;
-    border-style: dashed;
+  /*  border-style: dashed;*/
 }
 .main-page {
     margin-top: 70px;
@@ -47,7 +49,7 @@ body {
 }
 .operation {
     margin: 10px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: 5px;
 }
 .link{
@@ -58,8 +60,9 @@ body {
     text-decoration: none;
 }
 .post-header {
+    padding-top: 8px;
     white-space:normal;
-    width:780px;
+    width:750px;
 }
 .comments_section{
     padding-top: 3px;
@@ -114,16 +117,18 @@ body {
 }
 
 #suggestion_title {
+    background-color: rgba(175, 238, 238, 0.8);
     font-size: 20px;
-}A
+}
 #suggestion_comment {
+    background-color: rgba(173, 216, 230, 0.9);
     border-color: #333;
 
 }
 
 #title {
     margin: 10px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-weight: 5px;
     text-align: center;
     font-size: 50px;
@@ -141,6 +146,9 @@ body {
     padding-left: 10px;
     white-space:normal;
     width:700px;
+}
+#myDomain {
+    font-family: 'Lobster Two', cursive;
 }
 .odd {
 
