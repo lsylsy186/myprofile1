@@ -5,7 +5,7 @@
         <p><button id="add" ng-show="authenticated"><span class="glyphicon glyphicon-plus-sign" ng-click="upVote(targets)"></span></button>Upvotes: {{targets.upvote}}</p>
     </div>
     <div id="suggestion_comment" class="comments">
-        <h4 id="Comments_title">Comments:</h4>
+        <h4 id="Comments_title"><a href="#/"><span class="glyphicon glyphicon-chevron-left"></span></a> Comments:</h4>
         <ul ng-repeat="comment in targets.comments | orderBy:'-upvote'" class="comments_section">
             <li><p id="comment-by">@{{comment.created_by}}  at "{{comment.created_at | date:"h:mma 'on' MMM d, y"}}"</p> </li>
             <h4 id="comment-content">Says:  "{{ comment.contents }}" </span></h4>

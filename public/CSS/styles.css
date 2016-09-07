@@ -19,6 +19,7 @@ body {
     padding-bottom: 8px;
 /*    border-style: dashed;*/
 }
+
 .comments {
     /*    background-color: #AFEEEE;*/
     /*background-color: rgba(173, 216, 230, 0.9);*/
@@ -154,11 +155,19 @@ body {
 
     /*background-color: #ADD8E6;*/
     /*background-color: rgba(173, 216, 230, 0.8);*/
-    background-color: rgba(175, 238, 238, 0.8);
+    background-color: rgba(175, 238, 238, 0.75);
+}
+
+.odd:hover {
+    background-color: rgba(175, 238, 238, 0.9);
 }
 
 .even {
     /*background-color: #AFEEEE;*/
      /*background-color: rgba(175, 238, 238, 0.8);*/
-     background-color: rgba(173, 216, 230, 0.9);
+     background-color: rgba(173, 216, 230, 0.85);
+}
+
+.even:hover {
+    background-color: rgba(173, 216, 230, 0.95);
 }
