@@ -30,16 +30,16 @@ router.route('/posts')
     //create a new post
     .post(function(req, res){
 
-    var post = new Post();
-    post.title = req.body.title;
-    post.created_by = req.body.created_by;
-    post.upvote = req.body.upvote;
-    post.save(function(err, post) {
-        if(err){
-            return res.send(500, err);
-        }
-        return res.json(post);
-    });
+        var post = new Post();
+        post.title = req.body.title;
+        post.created_by = req.body.created_by;
+        post.upvote = req.body.upvote;
+        post.save(function(err, post) {
+            if(err){
+                return res.send(500, err);
+            }
+            return res.json(post);
+        });
 
     })
 
@@ -89,27 +89,6 @@ router.route('/posts/:id')
                 }
             }
         });
-        // if(req.body.title !== ''){
-        //     Post.findByIdAndUpdate(req.params.id, req.body, function(err, post){
-        //     if(err){
-        //         console.log(err);
-        //         return next(err);
-        //     }
-
-        //     res.json(post);
-        //     });
-        // }
-
-        // if(req.body.contents !== ''){
-        // Post.findByIdAndUpdate(req.params.id, {$push: {"comments":req.body}}, {safe: true, upsert: true}, function(err, post){
-        // if(err){
-        //     console.log(err);
-        //     return next(err);
-        // }
-
-        // res.json(post);
-        // });
-        //};
 
     })
     //gets specified post
