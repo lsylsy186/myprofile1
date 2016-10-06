@@ -52,6 +52,13 @@ body {
     margin: 10px;
     font-family: 'Cabin', sans-serif;
     font-weight: 5px;
+    /*border-radius: 5px;*/
+
+}
+.operation-submit {
+    border-style: none none dashed;
+    border-color: black;
+    padding-bottom: 5px;
 }
 .link{
     color: #191970;
