@@ -10,13 +10,15 @@
             <h3><strong>Suggestions</strong><span><button type="submit" class="btn btn-primary" style="float: right;">Suggest</button></span></h3>
         </form>
     </div>
-    <div class="suggestions" ng-repeat="post in posts | orderBy:'-upvote'" ng-class-odd="'odd'" ng-class-even="'even'">
-        <button id="remove" ng-show='authenticated' ><span class="glyphicon glyphicon-remove-sign" ng-click="remove(post)"></span></button>
-        <h3 class="post-header">{{ post.title }}<span id="post-by"><small> Posted by @{{post.created_by}}  at "{{post.created_at | date:"h:mma 'on' MMM d, y"}}"</small></span></h3>
-        <p>
-            <button id="add" ng-show='authenticated'><span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span></button> Upvotes: {{post.upvote}}
-        </p>
-        <a class="link" href="#/suggestion/{{post._id}}">Comments  <span class="badge">{{post.comments.length}}</span></a>
+    <div class="suggestions-container">
+        <div class="suggestions" ng-repeat="post in posts | orderBy:'-upvote'" ng-class-odd="'odd'" ng-class-even="'even'">
+            <button id="remove" ng-show='authenticated' ><span class="glyphicon glyphicon-remove-sign" ng-click="remove(post)"></span></button>
+            <h3 class="post-header">{{ post.title }}<span id="post-by"><small> Posted by @{{post.created_by}}  at "{{post.created_at | date:"h:mma 'on' MMM d, y"}}"</small></span></h3>
+            <p>
+                <button id="add" ng-show='authenticated'><span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span></button> Upvotes: {{post.upvote}}
+            </p>
+            <a class="link" href="#/suggestion/{{post._id}}">Comments  <span class="badge">{{post.comments.length}}</span></a>
+        </div>
     </div>
 </div>
 </div>
