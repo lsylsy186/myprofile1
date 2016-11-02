@@ -9,15 +9,12 @@ body {
 }
 .suggestions {
 /*    background-color: #AFEEEE;*/
-
     border-radius:10px;
     margin: 10px;
     font-family: 'Cabin', sans-serif;
     font-weight: 5px;
-
     padding-left: 8px;
     padding-bottom: 8px;
-
 }
 .suggestions-container {
     border-style: none none dashed;
