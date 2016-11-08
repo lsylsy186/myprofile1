@@ -334,16 +334,19 @@ h4 {
 }
 
 #suggestionbox:hover {
+    cursor: pointer;
     padding: 2px;
     border:2px solid #E74C3C;
     border-radius: 5px;
 }
 #carcassonne:hover {
+    cursor: pointer;
     padding: 2px;
     border:2px solid #E74C3C;
     border-radius: 5px;
 }
 #flappybird:hover {
+    cursor: pointer;
     padding: 2px;
     border:2px solid #E74C3C;
     border-radius: 5px;
